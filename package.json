@@ -14,6 +14,7 @@
     "@nuxt/eslint": "^1.4.1",
     "@nuxt/icon": "^1.14.0",
     "@nuxt/ui": "^3.2.0",
+    "better-sqlite3": "^11.10.0",
     "eslint": "^9.29.0",
     "nuxt": "^3.17.5",
     "typescript": "^5.8.3",
@@ -21,6 +22,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
+    "@nuxtjs/apollo": "^5.0.0-alpha.14",
     "@tailwindcss/typography": "^0.5.16"
   }
 }

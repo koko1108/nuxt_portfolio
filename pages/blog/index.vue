@@ -15,7 +15,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <h1 class="text-4xl font-bold mb-8">部落格文章</h1>
+  <h1 class="text-4xl font-bold mb-8">Blog</h1>
 
   <section
     class="grid md:grid-cols-3 mt-8 gap-10"
@@ -25,6 +25,6 @@ useSeoMeta({
   </section>
 
   <div v-else class="text-center py-12">
-    <p class="text-gray-500 dark:text-gray-400">還沒有文章</p>
+    <p class="text-gray-500 dark:text-gray-400">No posts available.</p>
   </div>
 </template>

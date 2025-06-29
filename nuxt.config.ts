@@ -12,9 +12,28 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
     },
   },
-  modules: ["@nuxt/content", "@nuxt/icon", "@nuxt/ui", "@nuxt/eslint"],
+  modules: [
+    "@nuxt/content",
+    "@nuxt/icon",
+    "@nuxt/ui",
+    "@nuxt/eslint",
+    "@nuxtjs/apollo",
+  ],
   css: ["~/assets/css/main.css"],
   content: {
     // https://content.nuxtjs.org/api/configuration
+  },
+  apollo: {
+    autoImports: true,
+    clients: {
+      default: {
+         httpEndpoint: 'https://api.github.com/graphql', // GitHub GraphQL API endpoint
+        httpLinkOptions: {
+          headers: {
+            Authorization: `Bearer ${process.env.GITHUB_TOKEN}` // 設定驗證 header
+          }
+        },
+      },
+    },
   },
 });

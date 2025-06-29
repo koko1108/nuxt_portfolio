@@ -60,6 +60,10 @@ You can use inline code
 
 `const hello = 'world';`
 
-:::callout{title="Hello World Callout"}
-This is a quick tip about markdown
-:::
+::callout
+#title
+Please be careful!
+#default
+Using MDC & Vue components is addictive.
+::
+
